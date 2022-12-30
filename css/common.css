@@ -12,7 +12,7 @@
 }
 /* header */
 .header_wrap {position: relative; height:120px; background-color: #fff;; }
-.header_wrap  .logo { position: absolute; left:0; top:33px; }
+.header_wrap  .logo { position: absolute; left:0; top:33px;z-index:15; }
 .header_wrap  .logo > a {display:block; width:366px; height:59px; background:url(../images/common/logo2.png) no-repeat; text-indent:-9999px;}
 .header_wrap  .logo > a:focus, .header_wrap  .logo > a:active{outline:1px dotted #000;}
 .header_wrap .user_wrap {text-align: right;;}
