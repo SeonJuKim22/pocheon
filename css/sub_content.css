@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+/*상단 타이틀*/
+.temp_title {margin-bottom:60px; text-align: center;}
+@media screen and (max-width: 1256px) {
+    .temp_title  {margin-bottom:40px; padding: 0 3%;  word-break: keep-all;}
+}
+@media screen and (max-width: 640px) {
+    .temp_title  br { display: none;;}
+}
+
+/* 이용안내 */
+.info_use .cont_style .box_img{ margin-bottom:25px;}
+
+/* 센터소개 */
+.Intro_center .gallery {display: flex; justify-content: space-between; flex-wrap: wrap;}
+.Intro_center .gallery li {line-height:0; margin-bottom:40px;}
+@media screen and (max-width: 1256px) {
+    .Intro_center .gallery li {flex: 1 1 30%;text-align:center; margin-bottom: 2%;margin-left: 2%;} 
+    .Intro_center .gallery li:first-child,  .Intro_center .gallery li:nth-child(4) {margin-left:0;}
+    .Intro_center .gallery li img {width: 100%;}
+}
+@media screen and (max-width: 640px) {
+    .Intro_center .gallery li {flex: 1 1 40%; margin:0 0  2% 0;}
+    .Intro_center .gallery li:nth-of-type(even) {margin-left:2%;}
+    .Intro_center .right_box p {margin-top:10px;}
+}
+@media screen and (max-width: 480px) {
+    .Intro_center .gallery {display:block;}
+    .Intro_center .gallery li:nth-of-type(even) {margin-left:0  !important;}
+}
+
+
+/* 찾아오시는길(주소,버스,지하철 등) */
+.map_wrap iframe.daum_map {width:100%; height:460px;} /* 다음지도 외부 크기(내부보다 20px 크게) */
+.root_daum_roughmap {width:100% !important;}
+.root_daum_roughmap .wrap_map {height:400px !important;} /* 다음지도 내부 크기 */
+.root_daum_roughmap .wrap_controllers {display:block !important;}
+.map_wrap p.h4 {margin-top:30px;}
+.map_wrap .cont {margin-top:70px; padding-top:40px; border-top:1px solid #e6e6e6;}
+@media screen and (max-width: 1199px) {
+        .map_wrap {margin-bottom:40px;}
+        .map_wrap .wrap_map {height:220px !important;}
+        .map_wrap iframe.daum_map {width:100%; height:260px;} /* 다음지도 외부 크기 */
+        .root_daum_roughmap .wrap_map {height:240px !important;} /* 다음지도 내부 크기 */
+        .map_wrap p.h4 {margin-top:20px;}
+        .map_wrap .cont_style .left_box h3 br,   .map_wrap p.h4 br {display:none;}
+        .map_wrap .cont {margin-top:40px; padding-top:30px; border-top:1px solid #e6e6e6;}
+
+}
+
+/*이메일 무단 수집거부 */
+.email_info {color:#666}
+.email_info p {margin-bottom:30px; font-size:18px; font-weight:600; color:#000;}
+.email_info .h5 {margin-bottom:0; padding-bottom:0;}
+.email_info .bu li {padding-bottom:0;}
+@media screen and (max-width: 1256px) {
+    .email_info p {margin-bottom:20px; font-size:15px; }
+    .email_info p  br {display: none;}
+}
+
+.top_title {margin:40px 0 35px; color:#000; font-weight: 600; font-size:18px;}
+
+@media screen and (max-width: 1256px) {
+    .top_title {margin:25px 0 20px; font-size:16px;} 
+}
+
+/* 개인정보처리방침, 이용약관 */
+.privacy {color:#666;}
+.privacy  h3.first {margin-top:40px; margin-bottom:20px;}
+.privacy .h5 {margin-top:20px; margin-bottom:0; padding-bottom:0;}
+.privacy h5 {font-size:16px; margin-bottom:0; padding-bottom:0;}
+.privacy p.tit {color:#000;}
+.privacy .table_scroll table{margin-top:10px;}
+.privacy .bu {padding:0;}
+.privacy .bu li {padding-bottom:0;}
+.privacy table td {color: #333;}
+.privacy .bottom_box p {font-size:18px; color:#000;}
+
+.privacy .bbs_btn_wrap  {margin-top:35px;}
+@media screen and (max-width: 1256px) {
+    .privacy .h5 {margin-bottom:5px;}
+    .privacy ul li .indent {margin-left:0;}
+    .privacy .bottom_box p {font-size:15px;}
+}
+
+
+/* 회원가입 - 개인정보 수집 및 이용동의 */
+
+.box_terms .contents_box{height:455px;margin-bottom:20px; border:1px solid #e6e6e6;overflow-y:auto;}
+.box_terms .contents_box .cont_box {padding:30px 3%;}
+
+.box_terms .contents_box .cont_box .table_scroll table {}
+.box_terms .contents_box .cont_box .first {margin-top:0; }
+.box_terms .agree_box .bbs_input_box:first-child {margin-left:20px;}
+
+/* 아이디 찾기 */
+.find_box {margin:50px 2px 40px 0;border:1px solid #e6e6e6;border-top:2px solid #599bdc;}
+.find_box .box_wrap{padding:30px 3% 20px;}
+.find_box ul  {width:430px; margin:0 auto;}
+.find_box ul  li {margin-bottom:10px;}
+.find_box ul  li  label {display:inline-block; width:95px; text-align:left;  font-size:16px;color:#666;}
+.find_box ul  li  input[type="text"]{width:220px; padding:5px 15px; color:#000; font-size:18px;}
+.find_box .explan {display:inline-block; margin-left:20px; color:#666;}
+
+/* 아이디 확인 */
+.login_find {margin:20px 0;}
+.login_find .box_wrap {padding:50px 3%; font-size:20px; text-align:center;}
+.login_find strong{position:relative;color:#219fda;font-weight:600;}
+
+@media screen and (max-width: 1256px) {
+    .find_box {margin:20px auto;}
+    .find_box .box_wrap {padding-top:15px; padding-bottom:10px;}
+    .find_box  ul {width:100%;}
+    .find_box ul  li  label  {width:100%; margin-bottom:5px;}
+    .find_box ul  li  input[type="text"]{ width:100%;}
+    .find_box .explan {margin-left:0; margin-top:5px;}
+    .login_find .box_wrap {padding-top:20px; padding-bottom:20px; font-size:18px;}
+
+}
+
+
+
+
+/* 로그인 */
+.box_login{margin:0 auto 50px;}
+.box_login .box_wrap{width:460px; padding:40px 0;margin:45px auto 50px; border:5px solid #37c4ff; border-radius: 5px; box-sizing: border-box;     box-shadow: 3.536px 3.536px 10px 0px rgba(0, 0, 0, 0.2); }
+.box_login .login_box{padding:0 45px; text-align: center;}
+.box_login .login_box li{margin-bottom:10px;}
+.box_login .login_box li input,.box_login .login_box li select{width:100%;padding:0 3%; color:#000;}
+.box_login .login_box .submit {width:160px;  height:50px; margin:20px auto 0; padding:0;  font-size:20px; line-height:50px; font-weight:600; color:#fff;  border-radius: 5px; background-color: #009cda; ;}
+.box_login .bottom_box {display:flex; justify-content: space-between; margin:0 20px;}
+.box_login .bottom_box .cont {min-width: 520px; padding:25px 10px; text-align: center;; box-sizing: border-box; border:1px solid #e6e6e6; border-radius: 10px;;}
+.box_login .bottom_box .cont p {color:#333;}
+.box_login .bottom_box .cont  h3 {margin:25px 0 28px; font-size:24px; letter-spacing: -1px; ; text-align:center; color:#000; font-weight: 600;;}
+.box_login .bottom_box .cont .btn {margin:30px 0 20px; padding:0 38px;}
+@media only screen and (max-width:1256px){
+    .box_login{width:100%;margin:0 auto 30px;}
+    .box_login .box_wrap {width:100%; margin:0; padding: 0; border:0 none;  box-shadow: none;}
+    .box_login .login_box {margin-bottom:20px; padding:0;}
+    .box_login .login_box .submit {width:100%; margin-top:0; height:40px; line-height:40px; font-size: 14px;;}
+    .box_login .bottom_box {display: block;; margin: 0;}
+    .box_login .bottom_box .cont {min-width:auto; padding:15px 3%; margin-bottom: 10px;;}
+    .box_login .bottom_box .cont h3 {margin:15px 0; font-size:19px;}
+    .box_login .bottom_box .cont .btn {width:100%; margin: 15px 0 10px;}
+
+}
+

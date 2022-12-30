@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, minimum-scale=1.0, user-scalable=yes" />
+	<meta name="title" content="사이트 제목" />
+	<meta name="keywords" content="키워드 입력" />
+	<meta name="description" content="사이트 상세설명" />
+    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="../css/sub.css" />
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/sub.js"></script>
+    <title>기본 게시판 템플릿</title>
+</head>
+<body>
+<div id="container">
+    <div class="wrap clearfix">
+
+        <main class="colgroup">
+            <article>
+                <header class="sub_head">
+                    <div class="sub_title"><h2>기본 게시판 템플릿</h2></div>
+                </header>
+
+                <div id="contents">
+
+
+
+
+<div class="bbs_explain">
+	<div class="box_wrap">
+		<div class="title_box">
+			이곳은 표준노드/링크 수정요청을 위한 게시판입니다.
+		</div>
+		<div class="contents_box">
+			게시판 성격에 맞지 않는 글이나 욕설, 비방, 저속한 표현 등은 게시글이 삭제될 수 있으니 유의하여 주시길 바랍니다.
+		</div>
+	</div>
+</div>
+<!-- //bbs_explain -->
+
+<form name="bbsNttForm" id="" method="post" action="">
+<fieldset>
+<legend>게시물 작성</legend>
+	<p class="write_guide"><span class="exactly y">필수</span>표시는 필수항목으로 모두 입력해야 합니다.</p>
+	<table class="bbs_table write">
+		<caption>{게시판이름} 글쓰기 - 공지사항여부, 부서, 제목, 작성자, 내용, 첨부파일, 이미지첨부파일의 대체텍스트 입력 </caption>
+		<colgroup>
+			<col style="width:20%;" />
+			<col style="width:80%;" />
+		</colgroup>
+		<tbody>
+		<tr>
+			<th scope="row"><span class="exactly y">필수</span><label for="">제목</label></th><!-- //필수 항목이 아닐 경우 클래스 y 삭제 -->
+			<td class="subject"><input type="text" name="" id=""  placeholder="제목 입력" /></td>
+		</tr>
+		<tr>
+			<th scope="row"><span class="exactly y">필수</span><label for="">카테고리</label></th>
+			<td>
+				<select name="" id="" title="카테고리 선택">
+					<option value="카테고리 선택">카테고리 선택</option>
+					<option value="식품">식품</option>
+					<option value="축산물">축산물</option>
+					<option value="일반질의">일반질의</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><span class="exactly y">필수</span><label for="">업체명</label></th>
+			<td>
+				<input type="text" name="" id="" />
+				<span class="bbs_explan y">사용가능한 아이디입니다.</span><!-- 사용가능할 경우 클래스 y 추가 -->
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><span class="exactly y">필수</span><label for="">업종</label></th>
+			<td><input type="text" name="" id="" /></td>
+		</tr>
+		<tr>
+			<th scope="row"><span class="exactly y">필수</span><label for="">연락처</label></th>
+			<td>
+				<p class="explain">ex) 휴대폰 번호</p>
+				<input type="text" name="" id="" />
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><span class="exactly y">필수</span><label for="">내용</label></th>
+			<td>
+				<textarea name="" rows="10" cols="5" id="" class="bbs_content"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><span class="exactly y">필수</span>공개 여부</th>
+			<td>
+				<div class="checkbox">
+					<span>
+						<input type="radio" name="100" id="101" />
+						<label for="101">공개</label>
+					</span>
+					<span>
+						<input type="radio" name="100" id="102" />
+						<label for="102">비공개</label>
+					</span>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><span class="exactly y">필수</span><label for="">우편번호</label> <span class="exactly"></span></th>
+			<td>
+				<input type="text" value="" title="우편번호 입력" class="zipcode" readonly="readonly" placeholder="우편번호" /> <button type="button" class="bbs_btn">우편번호 찾기</button>
+				<div class="clearfix">
+					<span class="addr_left"><input type="text" name="" value="" title="기본주소 입력" placeholder="기본주소 입력" readonly="readonly" class="addr" /></span>
+					<span class="addr_right"><input type="text" name="" value="" title="상세주소 입력" placeholder="상세주소 입력" class="addr2" /></span>
+				</div>
+
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><span class="exactly y">필수</span><label for="">구분</label></th>
+			<td>
+				<p class="explain">업종을 선택 후 업종별 품목조회 버튼을 클릭하면 HACCP적용품목이 나타납니다.</p>
+				<select name="" id="" title="구분 선택">
+					<option value="">선택하세요</option>
+					<option value="">농장</option>
+					<option value="">가공,유통</option>
+				</select>
+				<button type="button" class="bbs_btn">업종별 품목조회</button>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><span class="exactly y">필수</span><label for="">HACCP적용품목</label></th>
+			<td>
+				<div class="checkbox">
+					<span>
+						<input type="checkbox" name="" id="111" />
+						<label for="111">돼지</label>
+					</span>
+					<span>
+						<input type="checkbox" name="" id="112" />
+						<label for="112">돼지</label>
+					</span>
+					<span>
+						<input type="checkbox" name="" id="113" />
+						<label for="113">돼지</label>
+					</span>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><span class="exactly y">필수</span>구비서류 <span class="exactly">필수</span></th>
+			<td>
+				<p class="explain">구비서류가 여러개일 경우 zip파일 형태로 압축해서 올려주세요.</p>
+				<ul class="attach">
+				<li>
+					<div class="attach_file">
+						<label for="" class="skip" title="첨부파일">구비서류</label>
+						<span class="file_input"><input type="file" name="" id="" class="file" /></span>
+					</div>
+					<div class="attach_alt">
+						<label for="" class="skip">대체텍스트</label>
+						<span class="alt_input"><input type="text" value="" id="" placeholder="첨부 이미지 대체콘텐츠 입력"  /></span>
+					</div>
+				</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><span class="exactly y">필수</span><label for="">HACCP관리 전산기준서 첨부</label> <span class="exactly">필수</span></th>
+			<td>
+				<p class="explain">작성된 HACCP관리 전산기준서 가 있다면 기준서번호를 입력해 주세요.</p>
+				<input type="text" name="" id="" />
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><span class="exactly y">필수</span><label for="">연락처</label></th>
+			<td>
+				<select name="" id="" title="전화번호 국번 선택" class="phone">
+					<option value="">010</option>
+					<option value="">02</option>
+					<option value="">043</option>
+				</select> -
+				<input type="text" name="" value="" title="전화번호 중간번호 입력" class="phone" /> -
+				<input type="text" name="" value="" title="전화번호 마지막번호 입력" class="phone" />
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><span class="exactly y">필수</span><label for="">우편번호</label></th>
+			<td>
+				<input type="text" value="" title="우편번호 입력" class="zipcode" readonly="readonly" placeholder="우편번호" /> <button type="button" class="bbs_btn">우편번호 찾기</button>
+				<div class="clearfix">
+					<span class="addr_left"><input type="text" name="" value="" title="기본주소 입력" placeholder="기본주소 입력" readonly="readonly" class="addr" /></span>
+					<span class="addr_right"><input type="text" name="" value="" title="상세주소 입력" placeholder="상세주소 입력" class="addr2" /></span>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><span class="exactly y">필수</span><label for="">내용</label></th>
+			<td>
+				<textarea name="" rows="10" cols="5" id="" class="bbs_content"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row"><span class="exactly y">필수</span>첨부파일 <span class="exactly"></span></th>
+			<td>
+				<ul class="attach">
+				<li>
+					<div class="attach_file">
+						<label for="" class="skip" title="첨부파일">첨부파일</label>
+						<span class="file_input"><input type="file" name="" id="" class="file" /></span>
+					</div>
+					<div class="attach_alt">
+						<label for="" class="skip" title="대체텍스트">대체텍스트</label>
+						<span class="alt_input"><input type="text" value="" id="" placeholder="첨부 이미지 대체콘텐츠 입력"  /></span>
+					</div>
+				</li>
+				<li>
+					<div class="attach_file">
+						<label for="" class="skip" title="첨부파일">첨부파일</label>
+						<span class="file_input"><input type="file" name="" id="" class="file" /></span>
+					</div>
+					<div class="attach_alt">
+						<label for="" class="skip" title="대체텍스트">대체텍스트</label>
+						<span class="alt_input"><input type="text" value="" id="" placeholder="첨부 이미지 대체콘텐츠 입력"  /></span>
+					</div>
+				</li>
+				</ul>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+	<!-- //bbs_table write -->
+
+	<div class="bbs_btn_wrap clearfix">
+		<div class="bbs_center">
+			<input type="submit" value="확인" class="bbs_btn write" />
+			<a href="" class="bbs_btn list">목록</a>
+		</div>
+	</div>
+	<!-- //bbs_btn_wrap -->
+
+
+</fieldset>
+</form>
+
+
+
+
+                </div>
+                <!-- //contents -->
+
+            </article>
+        </main>
+        <!-- //main.colgroup -->
+
+
+    </div>
+    <!-- //wrap -->
+</div>
+<!-- //container -->
+</body>
+</html>

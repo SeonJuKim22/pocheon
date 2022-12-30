@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, minimum-scale=1.0, user-scalable=yes" />
+	<meta name="title" content="사이트 제목" />
+	<meta name="keywords" content="키워드 입력" />
+	<meta name="description" content="사이트 상세설명" />
+    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="../css/sub.css" />
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/sub.js"></script>
+    <script src="../js/board.js"></script>
+    <title>기본 게시판 템플릿</title>
+</head>
+<body>
+<div id="container">
+    <div class="wrap clearfix">
+
+        <main class="colgroup">
+            <article>
+                <header class="sub_head">
+                    <div class="sub_title"><h2>기본 게시판 템플릿</h2></div>
+                </header>
+
+                <div id="contents">
+
+<table class="bbs_table list" data-rwdb="yes">
+	<caption>{게시판명} 목록 - 번호, 제목, 작성자, 파일, 조회수, 작성일 정보 제공</caption>
+	<colgroup>
+		<col style="width:8%;" />
+		<col />
+		<col style="width:10%;" />
+		<col style="width:8%;" />
+		<col style="width:18%;" />
+		<col style="width:10%;" />
+	</colgroup>
+	<thead>
+	<tr>
+		<th scope="col">번호</th>
+		<th scope="col">제목</th>
+		<th scope="col">작성자</th>
+		<th scope="col">조회수</th>
+		<th scope="col">작성일</th>
+		<th scope="col">처리상태</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>10</td>
+		<td class="subject"><a href="">2014년 정기분 재산세(건축물,주택) 납부안내 2014년 정기분 재산세(건축물,주택) 납부안내</a> <span class="bbs_ico new">새글</span></td>
+		<td>재무과</td>
+		<td>42</td>
+		<td>2020.10.10. 12:00</td>
+		<td><span class="status type1">접수중</span></td>
+	</tr>
+	<tr>
+		<td>9</td>
+		<td class="subject"><span class="bbs_ico secret">비밀글</span><a href="">2014년 정기분 재산세(건축물,주택) 납부안내 </a> <span class="bbs_ico hot">핫이슈</span></td>
+		<td>재무과</td>
+		<td>42</td>
+		<td>2020.10.10. 12:00</td>
+		<td><span class="status type1">접수중</span></td>
+	</tr>
+	<tr>
+		<td>8</td>
+		<td class="subject"><span class="bbs_ico secret">비밀글</span><a href="">2014년 정기분 재산세(건축물,주택) 납부안내 </a></td>
+		<td>재무과</td>
+		<td>42</td>
+		<td>2020.10.10. 12:00</td>
+		<td><span class="status type2">답변완료</span></td>
+	</tr>
+	<tr>
+		<td>7</td>
+		<td class="subject"><span class="bbs_ico reply">댓글</span><a href="">2014년 정기분 재산세(건축물,주택) 납부안내 </a></td>
+		<td>재무과</td>
+		<td>42</td>
+		<td>2020.10.10. 12:00</td>
+		<td><span class="status type2">답변완료</span></td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td class="subject"><span class="bbs_ico reply">댓글</span><a href="">2014년 정기분 재산세(건축물,주택) 납부안내 </a> <span class="bbs_ico new">새글</span> <span  class="bbs_ico comment"><span class="skip">댓글수 : </span>3</span></td>
+		<td>재무과</td>
+		<td>42</td>
+		<td>2020.10.10. 12:00</td>
+		<td><a href="" class="status type1">신청중</a></td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td class="subject"><a href="">2014년 정기분 재산세(건축물,주택) 납부안내 </a> <span class="bbs_ico comment"><span class="skip">댓글수 : </span>3</span></td>
+		<td>재무과</td>
+		<td>42</td>
+		<td>2020.10.10. 12:00</td>
+		<td><a href="" class="status type1">신청중</a></td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td class="subject"><a href="">2014년 정기분 재산세(건축물,주택) 납부안내 </a></td>
+		<td>재무과</td>
+		<td>42</td>
+		<td>2020.10.10. 12:00</td>
+		<td><a href="" class="status type3">신청마감</a></td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td class="subject"><a href="">2014년 정기분 재산세(건축물,주택) 납부안내 </a> </td>
+		<td>재무과</td>
+		<td>42</td>
+		<td>2020.10.10. 12:00</td>
+		<td><a href="" class="status type3">신청마감</a></td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td class="subject"><a href="">2014년 정기분 재산세(건축물,주택) 납부안내 </a> </td>
+		<td>재무과</td>
+		<td>42</td>
+		<td>2020.10.10. 12:00</td>
+		<td><a href="" class="status">버튼추가</a></td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td class="subject"><a href="">2014년 정기분 재산세(건축물,주택) 납부안내 </a> </td>
+		<td>재무과</td>
+		<td>42</td>
+		<td>2020.10.10. 12:00</td>
+		<td><a href="" class="status type3">버튼추가</a></td>
+	</tr>
+	<tr>
+		<td colspan="8" class="bbs_empty"> 등록된 게시물이 없습니다.</td>
+	</tr>
+	</tbody>
+</table>
+<!-- //bbs_default list -->
+
+<div class="pagination">
+	<a href="" class="prev_end">처음 페이지</a>
+	<a href="" class="prev_one">이전 페이지</a>
+	<strong title="현재 1페이지">1</strong>
+	<a href="" title="2페이지 이동">2</a>
+	<a href="" title="3페이지 이동">3</a>
+	<a href="" title="4페이지 이동">4</a>
+	<a href="" title="5페이지 이동">5</a>
+	<a href="" title="6페이지 이동">6</a>
+	<a href="" title="7페이지 이동">7</a>
+	<a href="" title="8페이지 이동">8</a>
+	<a href="" title="9페이지 이동">9</a>
+	<a href="" title="10페이지 이동">110</a>
+	<a href="" class="next_one">다음 페이지</a>
+	<a href="" class="next_end">끝 페이지</a>
+</div>
+<!-- //pagination -->
+
+<div class="bbs_btn_wrap clearfix">
+	<div class="bbs_left">
+		<a href="" class="bbs_btn delete">삭제</a>
+	</div>
+	<div class="bbs_right">
+		<a href="" class="bbs_btn write">수정요청</a>
+	</div>
+</div>
+<!-- //bbs_btn_wrap -->
+
+
+
+
+<div class="bbs_btn_wrap clearfix">
+	<p style="margin-bottom:10px;"><strong>버튼 클래스 확인</strong> - 기본 클래스 bbs_btn 에 클래스 추가하여 사용. a, input, button 태그에 모두 사용 가능.</p>
+	<div class="bbs_center">
+		<a href="" class="bbs_btn">bbs_btn</a>
+		<a href="" class="bbs_btn write">write</a>
+		<a href="" class="bbs_btn modify">modify</a>
+		<a href="" class="bbs_btn reply_write">reply_write</a>
+		<a href="" class="bbs_btn delete">delete</a>
+		<a href="" class="bbs_btn list">list</a>		
+		<br />
+		<a href="" class="bbs_btn">bbs_btn</a>
+		<a href="" class="bbs_btn type01">type01</a>
+		<a href="" class="bbs_btn type02">type02</a>
+		<a href="" class="bbs_btn type03">type03</a>
+		<a href="" class="bbs_btn type04">type04</a>
+		<a href="" class="bbs_btn type05">type05</a>
+	</div>
+</div>
+<!-- //bbs_btn_wrap -->
+
+
+                </div>
+                <!-- //contents -->
+
+            </article>
+        </main>
+        <!-- //main.colgroup -->
+
+
+    </div>
+    <!-- //wrap -->
+</div>
+<!-- //container -->
+</body>
+</html> 

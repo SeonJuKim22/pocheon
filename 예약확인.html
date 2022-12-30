@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, minimum-scale=1.0, user-scalable=yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+<meta name="keywords" content="키워드 입력">
+<meta name="description" content="사이트 설명">
+<link rel="stylesheet" href="css/sub.css">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/sub.js"></script>
+<title>예약확인 -  포천시 교통약자 이동지원센터</title>
+</head>
+<body id="sub"><!-- id 값 메인은 sub 들어갑니다. -->
+	<div id="wrapper"> 
+		<!-- skipnavi -->
+		<div class="accessibility">
+            <a href="#contents">본문 바로가기</a>
+		</div>
+		<!-- //skipnavi -->
+		<!-- header -->
+		<div class="header_wrap">
+            <div class="wrap">
+                <h1 class="logo"><a href="#">포천시 교통약자이동지원센터</a></h1>
+                <!-- user_wrap -->
+                <div class="user_wrap">
+                    <a href="#" class="fir">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">찾아오시는길</a>
+                </div>
+                <!-- //user_wrap -->
+            </div>
+            <!-- //wrap -->
+
+            <!-- header_inner -->
+            <div class="header_inner">
+                <header id="header" class="clearfix">
+                    <button type="button" class="m_btn gnb_open">메뉴 열기</button>
+                    <button type="button" class="m_btn home">홈버튼</button>
+                    <!-- gnb -->
+                    <nav id="gnb">
+                        <h2 class="skip">주메뉴</h2>
+                        <ul class="clearfix">
+                            <li><a href="#">이용안내</a></li>
+                            <li><a href="#">예약신청</a></li></li>
+                            <li><a href="#">예약확인</a></li></li>
+                            <li><a href="#">공지사항</a></li></li>
+                            <li><a href="#">센터소개 </a></li></li>
+                        </ul>
+                        <div class="gnb_btn">
+                            <p>
+                                <a href="#">로그인</a>
+                                <a href="#">회원가입</a>
+                                <a href="#">찾아오시는길</a>
+                            </p>
+                        </div>
+                    </nav>
+                    <!-- //gnb -->
+                </header>
+            </div>
+            <!-- //header_inner -->
+		</div>
+		<!-- //header -->
+        <hr >
+
+        <!-- sub_visual -->
+        <div class="sub_visual">
+            <div class="wrap">
+                <div class="sub_title">예약확인</div><!-- 1차 메뉴명이 들어갑니다.-->
+            </div>
+        </div>
+        <!-- //sub_visual -->
+
+        <!-- container -->
+        <div id="container"> 
+            <div class="wrap clearfix">
+                <main class="colgroup" id="colgroup">
+                    <article>
+                        <!--sub_head -->
+                        <header class="sub_head">
+                            <h2>예약확인</h2>
+                        </header>
+                        <!--//sub_head -->
+
+                          <!-- contents -->
+                        <div id="contents">
+
+                            <div class="line"></div><!--line-->
+                            <div class="bbs_info clearfix">
+                                <div class="bbs_count">
+                                    총 게시물<strong class="total">10</strong>
+                                    페이지<span class="currently"><em>1</em>/1</span>
+                                </div>
+                                <!--//bbs_count  -->
+                                
+                                <div class="bbs_category">
+                                    <form method="get">
+                                        <fieldset>
+                                            <legend>검색</legend>
+                                            <select title="분류선택">
+                                                <option value="">선택</option>
+                                                <option value="">선택2</option>
+                                                <option value="">선택3</option>
+                                            </select>
+                                            <input type="text" class="input_text" title="검색어를 입력하세요.">
+                                            <input type="submit" value="검색" class="submit" title="검색">
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <!--//bbs_category -->
+                            </div>
+                            <!---//bbs_info -->
+
+                            <table class="bbs_table list" data-rwdb="yes">
+                                <caption>{예약확인} 목록 - 번호, 출발지, 도착지, 예약날자, 예약시간, 예약자, 신청일, 상태, 관리순으로 정보 제공</caption>
+                                <colgroup>
+                                    <col style="width:7%;">
+                                    <col style="width:20%;">
+                                    <col style="width:20%;">
+                                    <col style="width:10%;">
+                                    <col style="width:8%;">
+                                    <col style="width:8%;">
+                                    <col style="width:9%;">
+                                    <col style="width:9%;">
+                                    <col style="width:9%;">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">출발지</th>
+                                    <th scope="col">도착지</th>
+                                    <th scope="col">예약날짜</th>
+                                    <th scope="col">예약시간</th>
+                                    <th scope="col">예약자</th>
+                                    <th scope="col">신청일</th>
+                                    <th scope="col">상태</th>
+                                    <th scope="col">관리</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>10</td>
+                                    <td class="title">포천시청</td><!-- 출발지 -->
+                                    <td class="title">포천 시외버스터미널</td><!-- 도착지  -->
+                                    <td>2019-12-25(수)</td>
+                                    <td>16:20</td>
+                                    <td>테레사</td>
+                                    <td>2019-12-23</td>
+                                    <td><span class="status type1">완료</span></td><!-- type1 완료   -->
+                                    <td><a href="" class="btn small">수정</a></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td class="title">포천시청</td><!-- 출발지 -->
+                                    <td class="title">포천 시외버스터미널</td><!-- 도착지  -->
+                                    <td>2019-12-25(수)</td>
+                                    <td>16:20</td>
+                                    <td>테레사</td>
+                                    <td>2019-12-23</td>
+                                    <td><span class="status type2">신청</span></td><!-- type2 신청   -->
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td class="title">포천시청</td><!-- 출발지 -->
+                                    <td class="title">두줄두줄 테스트두줄 테스트두줄 테스트두줄 테스트두줄 테스트 테스트</td><!-- 도착지  -->
+                                    <td>2019-12-25(수)</td>
+                                    <td>16:20</td>
+                                    <td>테레사</td>
+                                    <td>2019-12-23</td>
+                                    <td><span class="status type3">취소</span></td><!-- type3 취소   -->
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td class="title">포천시청</td><!-- 출발지 -->
+                                    <td class="title">포천 시외버스터미널</td><!-- 도착지  -->
+                                    <td>2019-12-25(수)</td>
+                                    <td>16:20</td>
+                                    <td>테레사</td>
+                                    <td>2019-12-23</td>
+                                    <td><span class="status type1">완료</span></td><!-- type1 완료   -->
+                                    <td><a href="" class="btn small">수정</a></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td class="title">포천시청</td><!-- 출발지 -->
+                                    <td class="title">포천 시외버스터미널</td><!-- 도착지  -->
+                                    <td>2019-12-25(수)</td>
+                                    <td>16:20</td>
+                                    <td>테레사</td>
+                                    <td>2019-12-23</td>
+                                    <td><span class="status type1">완료</span></td><!-- type1 완료   -->
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td class="title">포천시청</td><!-- 출발지 -->
+                                    <td class="title">두줄두줄 테스트두줄 테스트두줄 테스트두줄 테스트두줄 테스트 테스트</td><!-- 도착지  -->
+                                    <td>2019-12-25(수)</td>
+                                    <td>16:20</td>
+                                    <td>테레사</td>
+                                    <td>2019-12-23</td>
+                                    <td><span class="status type3">취소</span></td><!-- type3 취소   -->
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td class="title">포천시청</td><!-- 출발지 -->
+                                    <td class="title">포천시외버스터미널</td><!-- 도착지  -->
+                                    <td>2019-12-25(수)</td>
+                                    <td>16:20</td>
+                                    <td>테레사</td>
+                                    <td>2019-12-23</td>
+                                    <td><span class="status type3">취소</span></td><!-- type3 취소   -->
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td class="title">포천시청</td><!-- 출발지 -->
+                                    <td class="title">포천 시외버스터미널</td><!-- 도착지  -->
+                                    <td>2019-12-25(수)</td>
+                                    <td>16:20</td>
+                                    <td>테레사</td>
+                                    <td>2019-12-23</td>
+                                    <td><span class="status type1">완료</span></td><!-- type1 완료   -->
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td class="title">포천시청</td><!-- 출발지 -->
+                                    <td class="title">포천 시외버스터미널</td><!-- 도착지  -->
+                                    <td>2019-12-25(수)</td>
+                                    <td>16:20</td>
+                                    <td>테레사</td>
+                                    <td>2019-12-23</td>
+                                    <td><span class="status type1">완료</span></td><!-- type1 완료   -->
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="title">포천시청</td><!-- 출발지 -->
+                                    <td class="title">포천 시외버스터미널</td><!-- 도착지  -->
+                                    <td>2019-12-25(수)</td>
+                                    <td>16:20</td>
+                                    <td>테레사</td>
+                                    <td>2019-12-23</td>
+                                    <td><span class="status type1">완료</span></td><!-- type1 완료   -->
+                                    <td></td>
+                                </tr>
+                                <!--  등록된 게시물이 없는경우 -->
+                                <tr>
+                                    <td colspan="9" class="bbs_empty"> 등록된 게시물이 없습니다.</td>
+                                </tr>
+                                <!--  //등록된 게시물이 없는경우 -->
+                                </tbody>
+                            </table>
+                            <!-- //bbs_default list -->
+                            
+                            <!-- pagination -->
+                            <div class="pagination">
+                                <a href="" class="prev_one">이전 페이지</a>
+                                <strong title="현재 1페이지">1</strong><!-- 현재페이지 strong으로 변경 -->
+                                <a href="" title="2페이지 이동">2</a>
+                                <a href="" title="3페이지 이동">3</a>
+                                <a href="" title="4페이지 이동">4</a>
+                                <a href="" title="5페이지 이동">5</a>
+                                <a href="" class="next_one">다음 페이지</a>
+                            </div>
+                            <!-- //pagination -->
+                            
+                            <!-- 버튼
+                            <div class="bbs_btn_wrap clearfix">
+                                <div class="bbs_left">
+                                    <a href="" class="bbs_btn delete">삭제</a>
+                                </div>
+                                <div class="bbs_right">
+                                    <a href="" class="bbs_btn write">글쓰기</a>
+                                </div>
+                            </div>-->
+                            <!-- //bbs_btn_wrap -->
+
+                           
+        
+        
+        
+        
+        
+        
+                        </div>
+                        <!-- //contents -->
+                    </article>
+                </main>
+                <!-- //main.colgroup -->
+            </div>
+              <!-- //wrap -->
+        </div>
+        <!-- //container -->
+        
+         <!-- footer -->
+        <footer id="footer">
+            <h2 class="skip">사이트정보</h2>
+            <div class="wrap">
+                <div class="footer_logo"><span>포천도시공사</span></div>
+              <nav>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">이메일무단수집거부</a>
+                <a href="#">이용약관</a>
+              </nav>
+              <address>
+                <div class="addr">경기도 포천시 군내면 청성로 112, 포천시 교통약자이동지원센터<span>전화 : 031.536.2000, 2088</span></div>
+                <div class="copy">Copyright ⓒ 2018 Pocheon Corporation. All Rights Reserved.</div>
+              </address>
+            </div>
+          </footer>
+           <!-- //footer -->
+	</div>
+      <!-- //wrapper -->
+</body>
+</html>
+
+
