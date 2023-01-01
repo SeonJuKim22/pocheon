@@ -57,45 +57,7 @@ $(function (){
     };
 });
 
-/* faq */
-function faqList(list){
-	var faqList=$(list).find('.list > li'),
-		faqBtn_open=faqList.find('.bbs_question'),
-		faqBtn_close=faqList.find('.close');
-
-	faqBtn_open.on('click',function(){
-		var item=$(this).parent('li');
-
-		if(item.hasClass('active')) {
-			item.removeClass('active');
-			$(this).siblings('div').slideUp();
-		}else{
-			faqList.not(item).each(function() {
-				$(this).removeClass('active');
-				$(this).find('.bbs_answer_area').slideUp();
-			});
-			item.addClass('active');
-			$(this).siblings('div').slideDown();
-		};
-	});
-	faqBtn_close.on('click',function(){
-		faqList.removeClass('active');
-		faqList.find('.bbs_answer_area').slideUp();
-	});
-};
-
-$(function (){
-    var faq=$('[data-list="faq"]');
-
-    if(faq.length>0){
-        var list=faq.attr('class').replace(/ /g, '.');
-        $(window).on({
-            load:function(){
-                faqList('.'+list)
-            }
-        });
-    };
-});
+/*  팝업  */
 $(document).ready(function(){
 	//bbs_popup
 	var focus_button;

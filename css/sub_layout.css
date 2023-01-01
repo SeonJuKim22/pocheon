@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
 #container {border-bottom:1px solid #e6e6e6;}
-#sub #header .home {border-right:1px solid #ccc; background-image: url(../images/sub/m_home_sub_btn.png);}
+#sub #header .home { background-image: url(../images/sub/m_home_sub_btn.png);}
 .colgroup {position:relative; z-index:10; float:right; width:1127px; min-height:500px; margin:70px auto 0;padding:0;}
 .sub_visual {position:relative; background-color: #599bdc;;}
 .sub_visual .wrap {height:148px;}
-.sub_visual .wrap:before {position:absolute;right:30px;top:0;width:544px;/*width:calc(100% - 100px);*/height:100%;display:inline-block;content:'';background-image:url(../images/sub/sub_visual.png);background-position:right top;background-repeat:no-repeat;}
+.sub_visual .wrap:before {position:absolute;right:30px;bottom:0;width:544px;height:139px;display:inline-block;content:'';background-image:url(../images/sub/sub_visual.png);background-position:right top;background-repeat:no-repeat;}
 .sub_title {padding:60px 0 45px; margin-left:98px; font-size:40px; color:#fff;font-weight:600; text-align:left;}
-
+.gnb_tit {display: none; padding: 10px 10px 10px 100px; font-size: 17px; font-weight: 600;;}
 /* 콘텐츠 제목 */
 .sub_head {position:relative; }
 .sub_head h2 {font-size:40px; margin-bottom:40px; color:#000;font-weight:600; text-align:center;}
@@ -22,9 +22,9 @@
 
     .sub_visual  {display: none;;}
     .sub_head h2{font-size:24px; margin-bottom:30px; color:#ff9a00;}
-    #contents {font-size:14px; line-height:160%; padding-bottom:20px;}
+    #contents {font-size:14px; line-height:160%; padding-bottom:50px;}
+    .gnb_tit {display: block; }
 }
-
 
 
 

@@ -36,30 +36,30 @@
             <!-- header_inner -->
             <div class="header_inner">
                 <header id="header" class="clearfix">
-                    <button type="button" class="m_btn gnb_open">메뉴 열기</button>
-                    <button type="button" class="m_btn home">홈버튼</button>
+                    <a href="main.html"  class="m_btn home">홈버튼</a>
+                    <span class="gnb_tit"></span><!--선택한 메뉴명이 나와야 합니다.-->
+                    <button type="button" class="m_btn lnb_btn">메뉴버튼</button>
                     <!-- gnb -->
-                    <nav id="gnb">
+                    <nav>
                         <h2 class="skip">주메뉴</h2>
                         <ul class="clearfix">
                             <li><a href="#">이용안내</a></li>
-                            <li><a href="#">예약신청</a></li></li>
-                            <li><a href="#">예약확인</a></li></li>
-                            <li><a href="#">공지사항</a></li></li>
-                            <li><a href="#">센터소개 </a></li></li>
+                            <li><a href="#">예약신청</a></li>
+                            <li><a href="#">예약확인</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">센터소개 </a></li>
                         </ul>
-                        <div class="gnb_btn">
-                            <p>
-                                <a href="#">로그인</a>
-                                <a href="#">회원가입</a>
-                                <a href="#">찾아오시는길</a>
-                            </p>
-                        </div>
+                        <p  class="gnb_area">
+                            <a href="#">로그인</a>
+                            <a href="#">회원가입</a>
+                            <a href="#">찾아오시는길</a>
+                        </p>
                     </nav>
                     <!-- //gnb -->
                 </header>
+                <!--// header-->
             </div>
-            <!-- //header_inner -->
+            <!--//header_inner -->
 		</div>
 		<!-- //header -->
         <hr >
@@ -85,38 +85,39 @@
 
                           <!-- contents -->
                         <div id="contents">
-                            <p class="temp_title">가입했을 당시 입력하셨던 정보들을 입력해서 아이디를 찾아주세요.<br>
-                                당시 입력한 정보를 잊어버리셨다면 관리자에게 연락해주세요.
-                            </p>
 
-                            <div class="find_box">
-                                    <div class="box_wrap">
-                                    <form>
-                                        <fieldset>
-                                            <legend>아이디 찾기</legend>
-                                            <ul>
-                                                <li><label for="name">이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름</label>
-                                                    <input type="text" id="name">
-                                                </li>
-                                                <li><label for="birth">생년월일</label>
-                                                    <input type="text" id="birth">
-                                                    <span class="explan">예) 20210131</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <!--//box_wrap -->
-                                   </div>
-                                   <!--//find_box -->
-                                    <div class="bbs_btn_wrap clearfix">
-                                        <div class="bbs_center">
-                                            <input type="submit" value="확인" class="bbs_btn type01">
-                                        </div>
-                                    </div>
-                                    <!-- //bbs_btn_wrap -->
-                                </fieldset>
-                            </form>
-                            <!--//form-->
-        
+                                <p class="temp_title">가입했을 당시 입력하셨던 정보들을 입력해서 아이디를 찾아주세요.<br>
+                                당시 입력한 정보를 잊어버리셨다면 관리자에게 연락해주세요.</p>
+                                <form>
+                                    <fieldset>
+                                        <legend>아이디 찾기</legend>
+                                            <div class="find_box">
+                                            <div class="box_wrap">
+                                                        <ul>
+                                                            <li>
+                                                                <label for="name">이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름</label>
+                                                                <input type="text" id="name" name="" value="" title="이름 입력">
+                                                            </li>
+                                                            <li>
+                                                                <label for="birth">생년월일</label>
+                                                                <input type="text" id="birth" name="" value="" title="생년월일 입력">
+                                                                <span class="explan">예) 20210131</span>
+                                                            </li>
+                                                        </ul>
+                                                </div>
+                                                <!--//box_wrap -->
+                                            </div>
+                                            <!--//find_box -->
+                                            <div class="bbs_btn_wrap clearfix">
+                                                <div class="bbs_center">
+                                                    <input type="submit" value="확인" class="bbs_btn type01">
+                                                </div>
+                                            </div>
+                                            <!-- //bbs_btn_wrap -->
+                                    </fieldset>
+                                </form>
+                                <!--//form-->
+            
                         </div>
                         <!-- //contents -->
                     </article>

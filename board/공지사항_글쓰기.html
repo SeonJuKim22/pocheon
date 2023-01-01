@@ -6,10 +6,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" >
 <meta name="keywords" content="키워드 입력">
 <meta name="description" content="사이트 설명">
-<link rel="stylesheet" href="css/sub.css">
-<script src="js/jquery-1.12.4.min.js"></script>
-<script src="js/common.js"></script>
-<script src="js/sub.js"></script>
+<link rel="stylesheet" href="../css/sub.css">
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/sub.js"></script>
 <title>콘텐츠명 -  포천시 교통약자 이동지원센터</title>
 </head>
 <body id="sub"><!-- id 값 메인은 sub 들어갑니다. -->
@@ -36,30 +36,30 @@
             <!-- header_inner -->
             <div class="header_inner">
                 <header id="header" class="clearfix">
-                    <button type="button" class="m_btn gnb_open">메뉴 열기</button>
-                    <button type="button" class="m_btn home">홈버튼</button>
+                    <a href="main.html"  class="m_btn home">홈버튼</a>
+                    <span class="gnb_tit">공지사항</span><!--선택한 메뉴명이 나와야 합니다.-->
+                    <button type="button" class="m_btn lnb_btn">메뉴버튼</button>
                     <!-- gnb -->
-                    <nav id="gnb">
+                    <nav>
                         <h2 class="skip">주메뉴</h2>
                         <ul class="clearfix">
-                            <li><a href="#">이용안내</a></li>
-                            <li><a href="#">예약신청</a></li></li>
-                            <li><a href="#">예약확인</a></li></li>
-                            <li><a href="#">공지사항</a></li></li>
-                            <li><a href="#">센터소개 </a></li></li>
+                            <li ><a href="#">이용안내</a></li>
+                            <li><a href="#">예약신청</a></li>
+                            <li><a href="#">예약확인</a></li>
+                            <li class="on"><a href="#">공지사항</a></li>
+                            <li><a href="#">센터소개 </a></li>
                         </ul>
-                        <div class="gnb_btn">
-                            <p>
-                                <a href="#">로그인</a>
-                                <a href="#">회원가입</a>
-                                <a href="#">찾아오시는길</a>
-                            </p>
-                        </div>
+                        <p  class="gnb_area">
+                            <a href="#">로그인</a>
+                            <a href="#">회원가입</a>
+                            <a href="#">찾아오시는길</a>
+                        </p>
                     </nav>
                     <!-- //gnb -->
                 </header>
+                <!--// header-->
             </div>
-            <!-- //header_inner -->
+            <!--//header_inner -->
 		</div>
 		<!-- //header -->
         <hr >
@@ -131,7 +131,6 @@
                                     <div class="bbs_btn_wrap clearfix">
                                         <div class="bbs_center">
                                             <input type="submit" value="확인" class="bbs_btn write">
-                                            <a href="" class="bbs_btn list">목록</a>
                                         </div>
                                     </div>
                                     <!-- //bbs_btn_wrap -->

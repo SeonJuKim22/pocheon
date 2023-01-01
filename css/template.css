@@ -141,13 +141,11 @@ a.btn:visited,a.btn:link{color:#fff;}
 .btn.noround{border-radius:0 !important;}
 .btn.noround{height:40px;font-size:15px;line-height:38px;border-radius:3px !important;font-weight:300;}
 .btn.noround:after{display:none;}
-@media only screen and (max-width:800px) {
-.btn{height:40px;font-size:14px;line-height:38px;}
+@media only screen and (max-width:1256px) {
+.btn{height:40px;font-size:14px;line-height:40px;}
 .btn.noround{height:30px;line-height:28px;font-weight:300;}
 }
-@media only screen and (max-width:640px) {
-.btn{height:30px;padding:0 10px;font-size:12px;line-height:28px;}
-}
+
 
 
 
@@ -156,7 +154,6 @@ a.btn:visited,a.btn:link{color:#fff;}
 .cont_style  .left_box {position: relative; width: 250px; padding:0 0 50px; border-top:4px solid #599bdc; display: table-cell; text-align: left; vertical-align: top;}
 .cont_style  .right_box {display:block; padding:50px 0;  border-top:1px solid #e6e6e6;}
 .cont_style  .left_box:after, .cont_style  .left_box:after {clear: both;}
-
 @media screen and (max-width: 1256px) {
 	.cont_style  {display:block; margin:0 0 30px; }
 	.cont_style  .left_box {width:100%; padding:25px 0 15px; display:block; text-align: left; border-top:1px solid  #e6e6e6;}
