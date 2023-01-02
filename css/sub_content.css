@@ -80,6 +80,7 @@
 .privacy .bbs_btn_wrap  {margin-top:35px;}
 @media screen and (max-width: 1256px) {
     .privacy .h5 {margin-bottom:5px;}
+    .privacy ul li {word-break: keep-all;}l
     .privacy ul li .indent {margin-left:0;}
     .privacy .bottom_box p {font-size:15px;}
 }

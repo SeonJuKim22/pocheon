@@ -159,7 +159,7 @@ table .bbs_btn{min-width:150px;font-size:16px;}
     .bbs_table.list tbody tr{border-bottom:1px solid #e6e6e6; padding:5px 0;}
     .bbs_table.list tbody tr:hover {background-color: transparent;}
     .bbs_table.list tbody tr:nth-child(odd){background:#f2f2f2}
-    .bbs_table.list tbody td{display:block;padding:3px 2% 3px;text-align:left;border:none;}
+    .bbs_table.list tbody td{display:block;padding:3px 2% 3px !important;text-align:left;border:none;}
     .bbs_table.list tbody td.subject a{color:#000; font-size:14px;}
     .bbs_table [data-cell-header]::before { content: attr(data-cell-header);  display: inline-block;font-weight: 600;padding-right: 6px; letter-spacing: 0;color:#000;}
     .bbs_table td.title {font-size:14px;}
@@ -279,7 +279,7 @@ table .bbs_btn{min-width:150px;font-size:16px;}
 .reservation_request .right_box .form_list .cont_box {flex-grow: 1; flex-shrink: 0;  margin-left:35px;}
 .reservation_request .right_box .form_list .cont_box:first-child {margin-left:0;}
 .reservation_request .right_box .form_list .cont_box h4 {margin-bottom:30px;}
-.reservation_request .right_box .form_list .cont_box .cont  {height:800px; padding:20px 35px 35px;  border-style: solid;  border-width: 5px; border-color: rgb(230, 230, 230); border-radius: 20px; box-sizing: border-box;}
+.reservation_request .right_box .form_list .cont_box .cont  {height:800px; padding:10px 35px 35px;  border-style: solid;  border-width: 5px; border-color: rgb(230, 230, 230); border-radius: 20px; box-sizing: border-box;}
 .form_item .input_title {display:block; margin-top:30px; margin-bottom:15px}
 .form_box input, .form_box select, .form_box textarea, .form_box .js_selectbox, .form_box .calendar_box {flex-grow: 1; width: 100%;}
 .form_area {display: flex;position: relative;}
@@ -290,6 +290,7 @@ table .bbs_btn{min-width:150px;font-size:16px;}
 .form_box .zipcode_box input{margin-top:10px; width:100%;}
 .form_box p {color:#666; margin-top:10px;}
 @media only screen and (max-width:1256px){
+    .reservation_request .cont_style .left_box h3 {color:#ff9a00;}
     .reservation_request .right_box .form_list {display:block;}
     .reservation_request .right_box .form_list .cont_box .cont {height:auto; margin-bottom:20px; padding:10px 3% 20px; border-width: 2px;;}
     .reservation_request .right_box .form_list .cont_box {margin-left:0;}

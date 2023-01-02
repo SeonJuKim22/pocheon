@@ -33,7 +33,7 @@ body {position:relative; font-size:16px; line-height:1.7em; letter-spacing:-0.05
 #header  .gnb_top { position: relative; height:50px;}
 
 /*모바일 gnb*/
-#header nav .gnb_area {display:none; margin-top:10px; margin-right:25px; text-align:right;;}
+#header nav .gnb_area {display:none;  margin:10px 25px 0 85px; text-align:left;;}
 #header nav .gnb_area  a {display:inline-block; position: relative; padding:0 10px 0 15px;  font-size:14px; line-height:16px; font-weight: 600;; color:#666;}
 #header nav .gnb_area  a::before {display:inline-block; content: '';; position: absolute; left:0; top:5px; width:5px; height:5px; border-radius: 100px; background-color: #b2b2b2;;}
 #header nav .gnb_area  a:first-child:before {display:none;}
