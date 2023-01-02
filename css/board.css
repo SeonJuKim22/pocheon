@@ -40,8 +40,6 @@ table .bbs_btn{min-width:150px;font-size:16px;}
     table .bbs_btn{min-width:120px;}
 }
 
-
-
 /* bbs_explan */
 .bbs_explan{display:inline-block;height:60px;margin:0 10px;line-height:60px;vertical-align:top;}
 .bbs_explan.y:before{display:inline-block;width:18px;height:12px;margin-right:5px;content:'';background:url(../images/board/bbs_icon.png) -250px -150px no-repeat;}
