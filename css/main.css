@@ -1,6 +1,6 @@
 ﻿@charset "UTF-8";
 
 /* Layout */
-@import url('default.css');
-@import url('common.css');
-@import url('main_layout.css');
+@import url('default.css'); /* 기본 RESET 스타일 */
+@import url('common.css'); /* 공통 스타일 */
+@import url('main_layout.css'); /* maisn 스타일 */

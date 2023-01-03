@@ -1,11 +1,11 @@
 ﻿@charset "UTF-8";
 
 /* Layout */
-@import url('default.css');
-@import url('common.css');
-@import url('sub_layout.css');
-@import url('template.css');
-@import url('board.css');
-@import url('sub_content.css');
+@import url('default.css');  /* 기본 RESET 스타일 */
+@import url('common.css'); /* 공통 스타일 */
+@import url('sub_layout.css');/* 서브 스타일 */
+@import url('template.css');/* 템플릿 스타일 */
+@import url('board.css'); /* 게시판 스타일 */
+@import url('sub_content.css'); /* 컨텐츠 스타일 */
 
 

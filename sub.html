@@ -6,24 +6,23 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" >
 <meta name="keywords" content="키워드 입력">
 <meta name="description" content="사이트 설명">
-<link rel="stylesheet" href="css/sub.css">
+<link rel="stylesheet" href="css/sub.css"><!-- sub style -->
 <script src="js/jquery-1.12.4.min.js"></script>
 <script src="js/common.js"></script>
-<script src="js/sub.js"></script>
+<script src="js/sub.js"></script><!-- sub style -->
 <title>콘텐츠명 -  포천시 교통약자 이동지원센터</title>
 </head>
 <body id="sub"><!-- id 값 메인은 sub 들어갑니다. -->
 	<div id="wrapper"> 
-		<!-- skipnavi -->
 		<div class="accessibility">
+            <a href="#gnb">본문 바로가기</a>
             <a href="#contents">본문 바로가기</a>
 		</div>
-		<!-- //skipnavi -->
-		<!-- header_wrap -->
+		<!-- //accessibility -->
+
 		<div class="header_wrap">
             <div class="wrap">
                 <h1 class="logo"><a href="main.html">포천시 교통약자이동지원센터</a></h1>
-                <!-- user_wrap -->
                 <div class="user_wrap">
                     <a href="#" class="fir">로그인</a>
                     <a href="#">회원가입</a>
@@ -32,39 +31,35 @@
                 <!-- //user_wrap -->
             </div>
             <!-- //wrap -->
-
-            <div class="header_inner">
-                <header id="header" class="clearfix">
-                    <a href="main.html"  class="m_btn home">홈버튼</a>
-                    <span class="gnb_tit">이용안내</span><!--선택한 메뉴명이 나와야 합니다.-->
-                    <button type="button" class="m_btn lnb_btn">메뉴버튼</button>
-                    <!-- gnb -->
-                    <nav>
-                        <h2 class="skip">주메뉴</h2>
-                        <ul class="clearfix">
-                            <li class="on"><a href="#">이용안내</a></li>
-                            <li><a href="#">예약신청</a></li>
-                            <li><a href="#">예약확인</a></li>
-                            <li><a href="#">공지사항</a></li>
-                            <li><a href="#">센터소개 </a></li>
-                        </ul>
-                        <p  class="gnb_area">
-                            <a href="#">로그인</a>
-                            <a href="#">회원가입</a>
-                            <a href="#">찾아오시는길</a>
-                        </p>
-                    </nav>
-                    <!-- //gnb -->
-                </header>
-                <!--// header-->
-            </div>
-            <!--//header_inner -->
-      
+            <header id="header" class="clearfix">
+                <a href="main.html"  class="m_btn home">홈버튼</a>
+                <span class="gnb_tit">이용안내</span><!--선택한 메뉴명이 나와야 합니다.-->
+                <button type="button" class="m_btn lnb_btn">메뉴버튼</button>
+                <!-- gnb -->
+                <nav  class="gnb">
+                    <h2 class="skip">주메뉴</h2>
+                    <ul class="gnb_list clearfix">
+                        <li class="on"><a href="#">이용안내</a></li><!-- 클릭시 cclass= "on"-->
+                        <li><a href="#">예약신청</a></li>
+                        <li><a href="#">예약확인</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">센터소개 </a></li>
+                    </ul>
+                    <!--//gnb_list -->
+                    <p  class="gnb_area">
+                        <a href="#">로그인</a>
+                        <a href="#">회원가입</a>
+                        <a href="#">찾아오시는길</a>
+                    </p>
+                     <!--//gnb_area -->
+                </nav>
+                <!-- //gnb -->
+            </header>
+            <!--// header-->
 		</div>
 		<!-- //header_wrap -->
         <hr >
 
-        <!-- sub_visual -->
         <div class="sub_visual">
             <div class="wrap">
                 <div class="sub_title">이용안내</div><!-- 1차 메뉴명이 들어갑니다.-->
@@ -72,7 +67,6 @@
         </div>
         <!-- //sub_visual -->
 
-        <!-- container -->
         <div id="container"> 
             <div class="wrap clearfix">
                 <main class="colgroup" id="colgroup">
@@ -105,7 +99,6 @@
         </div>
         <!-- //container -->
         
-         <!-- footer -->
         <footer id="footer">
             <h2 class="skip">사이트정보</h2>
             <div class="wrap">

@@ -2,96 +2,30 @@
 
 jQuery(function(){
 
-    	//lnb_btn
+
+    //gnb
 	$('.lnb_btn').on('click',function(event){
 		var $target=$(event.target);
-		if($target.is('.active_on .lnb_btn')){
-				$('#header').removeClass('active_on').find('.lnb_btn').attr('title','메뉴 닫힘');
-		}else{
-			$('#header').addClass('active_on').find('.lnb_btn').attr('title','메뉴 열림');
-		};
-	});
-
-	
-	//탭메뉴
-	var tab_confirm=$('.tab_menu').hasClass('action');
-	if(tab_confirm==true){
-		$('.tab_menu.action li').removeClass('on');
-		$('.tab_menu.action li').eq(0).addClass('on');
-		$('.tab_contents').hide();
-		$('.tab_contents').eq(0).show();
-	};
-	$('.sub_tab_menu .on a').on('click', function(event){
-		var $target=$(event.target);
-
-		if($target.is('.active_on')){
-			$(this).removeClass('active_on').parents('ul').removeClass('active');
-		}else{
-			$(this).addClass('active_on').parents('ul').addClass('active');
-		};
-		return false;
-	});
-	$('.tab_menu a').on('click', function(event){
-		var $target=$(event.target),
-			tab=$(this).parents('.tab_menu'),
-			nums=$(this).parents('li').index();
-		
-		if($target.is('.on a')){
-			if($target.is('.active_on')){
-				$(this).removeClass('active_on').parents('ul').removeClass('active');
-			}else{
-				$(this).addClass('active_on').parents('ul').addClass('active');
-			};
-			return false;
-		}else{
-			tab.find('ul').removeClass('active').find('li').removeClass('on').find('a').removeClass('active_on');
-			$(this).parents('li').addClass('on');
-			if($target.is('.action a')){
-				if($target.is('.tab_contents a')){
-					$('.tab_contents').find('li').removeClass('on');
-					$('.tab_contents').find('li').eq(0).addClass('on');
-				}else{
-					$('.tab_contents').hide();
-					$('.tab_contents').eq(nums).show();
-					return false;
-				};				
-			}else{
-				return true;
-			};
-		};
-	});
-
-	//탭메뉴2
-	var tab_confirms=$('div').hasClass('other_tab'),
-		other_tab='',
-		other_button='';
-
-	if(tab_confirms==true){
-		other_tab=$('.other_tab');
-		other_button=other_tab.find('.button_area button');
-		other_tab.find('.button_area button').removeClass('on');
-		other_tab.find('.button_area button').eq(0).addClass('on');
-		other_tab.find('.other_contents').hide();
-		other_tab.find('.other_contents').eq(0).show();
-	};
-	$('.other_tab .button_area button').on('click', function(event){
-		var $target=$(event.target),
-			tab=$(this).parents('.other_tab'),
-			nums=$(this).index();
-		
 		if($target.is('.on')){
+            $(this).attr("title","메뉴 열기");
+			$(this).removeClass('on').parents('#header').find('.gnb').slideUp(300);
+		}else{
+            $(this).attr("title","메뉴 닫기");
+			$(this).addClass('on').parents('#header').find('.gnb').slideDown(300);
+		};		
+	});
+	$(' .gnb .gnb_area  a:last-child').on('focusout',function(event){
+		$(this).parents('.gnb').slideUp(300).siblings('button').removeClass('on');
+	});
+    $('.gnb_list li a').on('click', function(event){
+		var $target=$(event.target);
+		if($target.is('.on a')){
 			return false;
 		}else{
-			other_tab.find('.button_area button').removeClass('on');
-			$(this).addClass('on');
-			other_tab.find('.other_contents').hide();
-			other_tab.find('.other_contents').eq(nums).show();
-			return false;
+			$('.gnb_list li a').parents('li').removeClass('on')
+			$(this).parents('li').addClass('on');
 		};
 	});
-
-	
-});
 
 
 
@@ -126,8 +60,86 @@ jQuery(function(){
 	});
 	
 	
-
 	
+});
+
+
+
+function tabOn(tab,num,img){
+    var $tab,$tab_btn;
+    var tabid=tab,n=num-1,btn_img=img;
+
+    $tab=$(tabid+'> ul > li');
+    $tab_btn = $(tabid+'> ul > li > a');
+    $tab_btn.siblings().hide();
+    $tab.eq(n).addClass('active');
+    $tab.eq(n).children('a').siblings().show();
+
+    if(btn_img=='img'){
+        var btn=$tab.eq(n).children('a').find("img");
+        btn.attr("src",btn.attr("src").replace("_off","_on"));
+    };
+
+    $tab_btn.on("click",function(event){
+        var realTarget_text=$(this).attr('href'),
+            realTarget=realTarget_text.charAt(0);
+
+        if(realTarget!="#"){
+            return
+        };
+        if(btn_img=='img'){
+            for(var i=0;i<$tab.size();i++){
+                var btn = $tab.eq(i).children('a').find("img");
+                btn.attr("src",btn.attr("src").replace("_on","_off"));
+            };
+            var active = $(this).parent().attr('class');
+            if(active!='active'){
+                var btn_img_off=$(this).find('img')[0];
+                btn_img_off.src= btn_img_off.src.replace('_off','_on');
+            };
+        };
+        $tab_btn.siblings().hide();
+        $tab_btn.parent().removeClass('active');
+        $(this).siblings().show();
+        $(this).parent().addClass('active');
+        event.preventDefault();
+    });
+};
+function tabOrg(tabid,a,img) {
+    var $tab, $tab_btn,$obj,$obj_view;
+    var tabid = tabid, num = a, btn_img = img;
+
+    $tab = $(tabid+' .tab_item  > li');
+    $tab_btn = $(tabid+' .tab_item > li > a');
+    $obj = $(tabid+' .tab_obj');
+    $obj_view = $(tabid+' .tab_obj.n'+num);
+    $tab.eq(num-1).addClass('active');
+    $obj_view.show();
+
+    if(btn_img =='img'){
+        var btn = $tab.eq(num-1).children('a').find("img");
+        btn.attr("src",btn.attr("src").replace("_off","_on"));
+    };
+    $tab.bind("click",function(event){
+        if(btn_img =='img'){
+            for(var i=0;i<$tab.size();i++){
+                var btn = $tab.eq(i).children('a').find("img");
+                btn.attr("src",btn.attr("src").replace("_on","_off"));
+            };
+            var active = $(this).parent().attr('class');
+            if(active != 'active'){
+                var btn_img_off = $(this).find('img')[0];
+                btn_img_off.src =  btn_img_off.src.replace('_off','_on');
+            };
+        };
+        var this_eq = $tab.index( $(this) );
+        $tab.removeClass('active');
+        $tab.eq(this_eq).addClass('active');
+        $obj.hide();
+        $(tabid+' .tab_obj.n'+(this_eq+1)).show();
+        event.preventDefault ();
+    });
+};
 
 
 

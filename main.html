@@ -13,13 +13,12 @@
 </head>
 <body  id="main"><!-- id 값 메인은 main 들어갑니다. -->
 	<div id="wrapper"> 
-		<!-- skipnavi -->
 		<div class="accessibility">
 			<a href="#gnb">주메뉴바로가기</a>
 			<a href="#contents">본문바로가기</a>
 		</div>
-		<!-- //skipnavi -->
-		<!-- header -->
+		<!-- //accessibility -->
+
 		<div class="header_wrap">
             <div class="wrap">
                 <h1 class="logo"><a href="https://seonjukim22.github.io/pocheon/main.html">포천시 교통약자이동지원센터</a></h1>
@@ -32,15 +31,14 @@
                 <!-- //user_wrap -->
             </div>
             <!-- //wrap -->
-
-            <!-- header_inner -->
+            
             <div class="header_inner">
                 <header id="header" class="clearfix">
                     <a href="https://seonjukim22.github.io/pocheon/main.html"  class="m_btn home">홈버튼</a>
                     <span class="gnb_tit"></span>
                     <button type="button" class="m_btn lnb_btn">메뉴버튼</button>
                     <!-- gnb -->
-                    <nav>
+                    <nav id="gnb">
                         <h2 class="skip">주메뉴</h2>
                         <ul class="clearfix">
                             <li><a href="https://seonjukim22.github.io/pocheon/1.이용안내.html">이용안내</a></li>
@@ -59,85 +57,87 @@
                 </header>
                 <!--// header-->
             </div>
+            <!-- //header_inner -->
 		</div>
-		<!-- //header -->
-        <!-- container -->
+		<!-- //header_wrap -->
+
         <main id="container"> 
- 
-                <div id="mcontainer">
+            <div id="mcontainer">
                     <div class="wrap">
-                    <div id="mcon1_wrap">
-                        <div class="mcon1">
-                            <div class="main_text">
-                                <img src="images/main/main_tit.png" alt="교통약자의 더 나은 삶을 위한 함꼐하는 동반자 포천행복콜 입니다.">
-                            </div>
-                            <div class="main_wrap">
-                                <ul>
-                                    <li class="apply">
-                                        <form>
-                                            <fieldset>
-                                                <legend>로그인</legend>
-                                                <div class="login">
-                                                    <div class="tit">로그인</div>
-                                                    <ul>
-                                                        <li>
-                                                            <label for="id" class="skip">ID</label>
-                                                            <input type="text" id="id" class="ipt_set block"  placeholder="아이디" >
-                                                        </li>
-                                                        <li>
-                                                            <label for="password" class="skip">Password</label>
-                                                            <input type="password" id="password" class="ipt_set block" placeholder="비밀번호">
-                                                        </li>
-                                                        <li>
-                                                            <input type="submit" value="로그인">
-                                                        </li>
-                                                    </ul>
-                                                    <div class="idpw">
-                                                        <a href="https://seonjukim22.github.io/pocheon/아이디찾기.html">아이디 찾기</a>
-                                                        <a href="https://seonjukim22.github.io/pocheon/비밀번호찾기.html">비밀번호 찾기</a>
+                        <div id="mcon1_wrap">
+                            <div class="mcon1">
+                                <div class="main_text">
+                                    <img src="images/main/main_tit.png" alt="교통약자의 더 나은 삶을 위한 함꼐하는 동반자 포천행복콜 입니다.">
+                                </div>
+                                <div class="main_wrap">
+                                    <ul>
+                                        <li class="apply">
+                                            <form>
+                                                <fieldset>
+                                                    <legend>로그인</legend>
+                                                    <div class="login">
+                                                        <h3 class="tit">로그인</h3>
+                                                        <ul>
+                                                            <li>
+                                                                <label for="id" class="skip">ID</label>
+                                                                <input type="text" id="id" class="ipt_set block"  placeholder="아이디" >
+                                                            </li>
+                                                            <li>
+                                                                <label for="password" class="skip">Password</label>
+                                                                <input type="password" id="password" class="ipt_set block" placeholder="비밀번호">
+                                                            </li>
+                                                            <li>
+                                                                <input type="submit" value="로그인">
+                                                            </li>
+                                                        </ul>
+                                                        <div class="idpw">
+                                                            <a href="https://seonjukim22.github.io/pocheon/아이디찾기.html">아이디 찾기</a>
+                                                            <a href="https://seonjukim22.github.io/pocheon/비밀번호찾기.html">비밀번호 찾기</a>
+                                                        </div>
+                                                        <div class="join_box">
+                                                            <a href="https://seonjukim22.github.io/pocheon/회원가입.html" >
+                                                                처음 방문이시면<br> 먼저<span><em>회원가입</em>을 <br>해주세요.</span>
+                                                            </a>
+                                                        </div>
                                                     </div>
-                                                    <div class="join_box">
-                                                        <a href="https://seonjukim22.github.io/pocheon/회원가입.html" >
-                                                            처음 방문이시면<br> 먼저<span><em>회원가입</em>을 <br>해주세요.</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </fieldset>
-                                         </form>    
-                                    </li>
-                                    <li class="notice">
-                                        <div class="tit1">공지사항</div>
-                                        <div class="tit2"><a href="https://seonjukim22.github.io/pocheon/board/공지사항_상세보기.html">포천행복콜 <br>운영안내입니다.</a></div>
-                                        <div class="date">2022-12-07</div>
-                                        <a href="https://seonjukim22.github.io/pocheon/board/공지사항.html" class="more">더보기</a>
-                                    </li>
-                                    <li class="info">
-                                        <div class="cont">
-                                            <h3 class="h0">예약신청</h3>
-                                            <p>출발지와 도착지를 입력해주세요.</p>
-                                        </div>
-                                    </li>
-                                    <li class="info type2">
-                                        <div class="cont">
-                                            <h3 class="h0">예약확인</h3>
-                                            <p>예약확인 및 수정 / 취소</p>
-                                        </div>
-                                    </li>
-                                    <li class="tel">
-                                        <div class="tit1">포천<em>행복<br>
-                                            콜</em>
-                                        </div>
-                                        <div class="number">
-                                            <a href="tel:031.536.2000">031.536.2000</a>
-                                            <a href="tel:031.536.2088">031.536.2088</a>
-                                        </div>
-                                    </li>
-                                </ul>
+                                                </fieldset>
+                                            </form>    
+                                        </li>
+                                        <li class="notice">
+                                            <h3 class="h0 tit1">공지사항</h3>
+                                            <div class="tit2"><a href="https://seonjukim22.github.io/pocheon/board/공지사항_상세보기.html">포천행복콜 <br>운영안내입니다.</a></div>
+                                            <div class="date">2022-12-07</div>
+                                            <a href="https://seonjukim22.github.io/pocheon/board/공지사항.html" class="more">더보기</a>
+                                        </li>
+                                        <li class="info">
+                                            <div class="cont">
+                                                <h3 class="h0">예약신청</h3>
+                                                <p>출발지와 도착지를 입력해주세요.</p>
+                                            </div>
+                                        </li>
+                                        <li class="info type2">
+                                            <div class="cont">
+                                                <h3 class="h0">예약확인</h3>
+                                                <p>예약확인 및 수정 / 취소</p>
+                                            </div>
+                                        </li>
+                                        <li class="tel">
+                                            <h3 class="tit1">포천<em>행복<br>
+                                                콜</em></h3>
+                                            <div class="number">
+                                                <a href="tel:031.536.2000">031.536.2000</a>
+                                                <a href="tel:031.536.2088">031.536.2088</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <!--//mcon1_wrap-->
                 </div>
+                 <!--//wrap-->
             </div>
+             <!--// mcontainer-->
         </main>
         <!-- //container -->
             
