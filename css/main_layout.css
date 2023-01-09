@@ -32,7 +32,8 @@
 .mcon1 .main_wrap > ul > li.apply .login .join_box a  em {display:inline-block; margin-left:5px; font-size:22px;font-weight:600; color:#009cda;}
 .mcon1 .main_wrap > ul > li.info {float:right; margin-left:30px; border-color:#ffb13a ;}
 .mcon1 .main_wrap > ul > li.info:before {display:block; content:''; width:38px; height:53px; position:absolute; right:20px; top:32px; z-index:10; background: url('../images/main/main_icon2.png') no-repeat left top;}
-.mcon1 .main_wrap > ul > li.info a {display:block; width:100%; height:242px; padding-top:25px; }
+.mcon1 .main_wrap > ul > li.info a {display:block; }
+.mcon1 .main_wrap > ul > li.info a:hover,.mcon1 .main_wrap > ul > li.info a:focus  {color:#333;}
 .mcon1 .main_wrap > ul > li.info .cont {padding:30px 25px;}
 .mcon1 .main_wrap > ul > li.info .cont h3 {font-size:22px;font-weight:600;}
 .mcon1 .main_wrap > ul > li.info .cont p {margin-top:10px; font-size:14px; color:#666;}
@@ -72,7 +73,8 @@
     .mcon1 .main_wrap > ul > li.notice {padding:20px;}
     .mcon1 .main_wrap > ul > li.notice .date {left:20px; bottom:27px;}
     .mcon1 .main_wrap > ul > li.notice .more {top:20px; right:20px;}
-    .mcon1 .main_wrap > ul > li.notice .tit1 {font-size:15px;}
+    .mcon1 .main_wrap > ul > li.notice .tit1 {font-size:15px;} 
+    .mcon1 .main_wrap > ul > li.info .cont h3 {font-size:18px; line-height:20px;}
 }
 @media screen and (min-width:540px) and (max-width:1256px) {
 	.mcon1 .main_wrap > ul > li {float:left; width:48%; /*height:242px;*/ margin-bottom:2%;}

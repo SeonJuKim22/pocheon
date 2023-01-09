@@ -54,12 +54,12 @@ body {position:relative; font-size:16px; line-height:1.7em; letter-spacing:-0.05
     .header_wrap .user_wrap {position: absolute; right:0; top:33px;}
     .header_wrap .user_wrap a {display:none;}
     .header_wrap .user_wrap a.fir {display:inline-block; font-size:13px; line-height:25px;padding:1px 15px; background-color:#009cda; color:#fff; font-weight:600; border-radius: 5px;}
-    .header_inner {height:50px;}
+    .header_inner {height:50px; }
 
 
     #header  {border-top:1px solid #ccc;}
     #header .m_btn  {display:inline-block}
-    #header nav {display:none; float:none;  position: absolute;  left: 0; top: 49px;width: 100%; padding: 0 30px 20px 0;  border-bottom:1px solid #cccccc; background-color:#fff;}
+    #header nav {display:none; float:none;  position: absolute;  left: 0; top: 49px;width: 100%; padding: 0 30px 20px 0;  border-top:1px solid #cccccc; border-bottom:1px solid #cccccc; background-color:#fff;}
     #header.active_on nav {display: block;}
     #header nav > ul > li {float:none; }
     #header nav > ul > li.on {display: none;;}

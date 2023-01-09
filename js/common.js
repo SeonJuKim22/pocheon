@@ -8,14 +8,14 @@ jQuery(function(){
 		var $target=$(event.target);
 		if($target.is('.on')){
             $(this).attr("title","메뉴 열기");
-			$(this).removeClass('on').parents('#header').find('.gnb').slideUp(300);
+			$(this).removeClass('on').parents('#header').find('#gnb').slideUp(300);
 		}else{
             $(this).attr("title","메뉴 닫기");
-			$(this).addClass('on').parents('#header').find('.gnb').slideDown(300);
+			$(this).addClass('on').parents('#header').find('#gnb').slideDown(300);
 		};		
 	});
-	$(' .gnb .gnb_area  a:last-child').on('focusout',function(event){
-		$(this).parents('.gnb').slideUp(300).siblings('button').removeClass('on');
+	$(' #gnb .gnb_area  a:last-child').on('focusout',function(event){
+		$(this).parents('#gnb').slideUp(300).siblings('button').removeClass('on');
 	});
     $('.gnb_list li a').on('click', function(event){
 		var $target=$(event.target);
