@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, minimum-scale=1.0, user-scalable=yes">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="키워드 입력">
+  <meta name="description" content="사이트 설명">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/sub.css"><!-- sub style -->
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/common.js"></script>
+  <title>탑승준비</title><!-- 콘텐츠명이 들어갑니다. -->
+</head>
+<body>
+	<div id="wrapper">
+        <div id="container">
+            <div class="header">
+                <div class="wrap">
+                    <div class="top_cont">
+                        <h1>탑승준비</h1>
+                        <h2>2023년 11월 21일</h2><!--  오늘 날짜가 들어갑니다.-->
+                        <!--<a href="javascript:;" class="prev_page" title="페이지 이동">이전</a>-->
+                    </div>
+                    <!--//top_cont -->
+                </div>
+                <!--//wrap-->
+            </div>
+            <!--//header -->
+
+
+            <div class="bottom_cont">
+                <div class="wrap">
+                    <div class="cont">
+                        <div class="title">
+                            <span class="name">홍길동</span><!-- 기사 성함 -->
+                            <span class="num">125바3467</span>
+                        </div>
+                        <p class="tit">머크퍼포먼스 머티리얼즈</p>
+                        <ul  class="day">
+                            <li>
+                                <div>출근시간<span class="time">오전</span></div>
+                                <p>10:00</p>
+                            </li>
+                            <li><a href="#" class="btn_layer btn" data-pop_name="layer_board"><span>탑승<br>하기</span></a></li>
+                        </ul>
+                    </div>
+                     <!--//cont-->
+
+                     <div class="cont">
+                        <div class="title">
+                            <span class="name">홍길동</span><!-- 기사 성함 -->
+                            <span class="num">125바3467</span>
+                        </div>
+                        <p class="tit">머크퍼포먼스 머티리얼즈</p>
+                        <ul  class="day">
+                            <li>
+                                <div>출발시간<span class="time">오후</span></div>
+                                <p>06:00</p>
+                            </li>
+                            <li><a href="#" class="btn_layer btn" data-pop_name="layer_board"><span>탑승<br>하기</span></a></li>
+                        </ul>
+                    </div>
+                     <!--//cont-->
+                </div>
+                <!--//wrap -->
+            </div>
+            <!--//bottom_cont-->
+            <footer>
+                <div class="bottom_box">
+                    <a href="" class="btn refresh"><span>다시읽기</span></a>
+                        <a href="index.html" class="btn logout"><span>로그아웃</span></a>
+                </div>
+                <!--//bottom-box -->
+            </footer> 
+            <!--//footer --> 
+            
+            <!--레이어팝업-->
+            <div class="layer_popup layer_board">
+                <div class="layer_wrap">
+                  <div class="layer_inner">
+                    <div class="layer_cont">
+                       <a href="#" class="btn_pop_close">닫기</a>
+                        <p>탑승시간이<br>
+                        아닙니다.</p>
+                    </div>
+                    <!--//layer_cont -->
+                  </div>
+                  <!--//layer_inner -->
+                </div>
+                <!--//layer_wrap -->
+              </div>
+               <!--// 레이어팝업-->
+        </div>
+        <!--//container -->    
+      
+          <div class="layer_overlay"></div>
+    </div>
+    <!--//wrapper -->
+</body>
+</html>
