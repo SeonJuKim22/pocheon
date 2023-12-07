@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">><!-- font -->
   <link rel="stylesheet" href="css/login.css"><!--로그인만 들어갑니다. -->
   <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/common.js"></script>
   <title>동영관광</title>
 </head>
 <body>
@@ -16,39 +17,61 @@
         <div class="login_container">
             <div class="login_top">
                 <h2 class="hide">BUS IN LOGO</h2>
-                <h3><img src="images/nfc_img.png" alt="NFC 탑승 "></h3>
+                <h3><img src="images/nfc_img.png" alt="NFC 탑승"></h3>
                 <p class="title">탑승자 아이디를 입력해 주세요.</p>
             </div>
             <!--//login_top-->
             
             <div class="login_box">
-                    <form action="" method="post">
-                        <form>
-                            <fieldset>
-                                <legend>로그인</legend>
-                                <ul class="login_cont">
-                                    <li >
-                                        <label for="id" >아이디입력</label>
-                                        <input type="text" id="id" placeholder="아이디">
-                                    </li>
-                                    <li>
-                                        <label for="password">비밀번호 입력</label>
-                                        <input type="password" id="password" placeholder="비밀번호">
-                                    </li>
-                                </ul>
-                                <input type="submit" class="submit" value="로그인">
-                            </fieldset>
-                        </form> 
-                    </form>
+                <form action="" method="post">
+                    <form>
+                        <fieldset>
+                            <legend>로그인</legend>
+                            <ul class="login_cont">
+                                <li >
+                                    <label for="id" >아이디입력</label>
+                                    <input type="text" id="id" placeholder="아이디">
+                                </li>
+                                <li>
+                                    <label for="password">비밀번호 입력</label>
+                                    <input type="password" id="password" placeholder="비밀번호">
+                                </li>
+                            </ul>
+                            <a href="#" class="submit btn_layer"  data-pop_name="layer_login">로그인</a><!---파업 테스트 버튼-->
+                            <!--<input type="submit" class="submit" value="로그인">-->
+                        </fieldset>
+                    </form> 
+                </form>
             </div>
             <!--//login_box -->
 
             <footer>
-                    <div class="footer_logo hide">동영관광 로고</div>
-                    <p class="copy">CopyrightⓒDONGYEONGTOUR<br>
-                        All Rights Reserved.</p>
+                <div class="footer_logo hide">동영관광 로고</div>
+                <p class="copy">CopyrightⓒDONGYEONGTOUR<br>
+                    All Rights Reserved.</p>
             </footer>
             <!--//footer -->
+             <!--레이어팝업-->
+             <div class="layer_popup layer_login">
+                <div class="layer_wrap">
+                  <div class="layer_inner">
+                    <div class="layer_cont">
+                       <a href="#" class="btn_pop_close">닫기</a>
+                        <p>아이디 또는<br>
+                        비밀번호를 잘못<br>
+                        입력했습니다.</p>
+                    </div>
+                    <!--//layer_cont -->
+                  </div>
+                  <!--//layer_inner -->
+                </div>
+                <!--//layer_wrap -->
+            </div>
+            <!--// 레이어팝업-->
+        </div>
+        <!--//container -->    
+      
+        <div class="layer_overlay"></div>
         </div>
         <!--//login_container -->
     </div>
