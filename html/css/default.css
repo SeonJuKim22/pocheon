@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
 
 /* reset style */
@@ -84,3 +84,14 @@ body {position:relative ; ; height:100%;margin: 0;  padding: 0; font-family: 'No
 .wrap {width: auto; margin: 0 auto; }
 /*body {/*display:flex; align-items: center; justify-content: center;  }*/ 
 #wrapper {position:relative; height:100%; width: 100%;   overflow:hidden; box-sizing: border-box;}
+
+
+
+/* 레이어 팝업 */
+.layer_overlay {display:none; overflow:auto; position:fixed; top:0; left:0; width:100%; height:100%; text-align:center; background:rgba(0,0,0,0.7); z-index:999;}
+.layer_popup {display:none; position:fixed; top: 50%;left: 50%;z-index: 2500;transform: translate(-50%, -50%); width: calc(100% - 4rem);/*height:19.5rem;*/margin: 0 auto; background:#fff; border-radius: 10px;border:3px solid #2ba756; box-sizing: border-box;}
+.layer_cont { display: flex; justify-content: center; align-items: center; padding:5.8rem 1rem}
+.layer_cont p { margin-left:2.0rem; font-size:2.5rem; font-weight:400; color:#005013; letter-spacing: -1px; line-height: 3rem;}
+.layer_popup .layer_wrap .btn_pop_close {display:inline-block; width:88px; height:78px; padding:0; margin:0; color:transparent; background:url(../images/arrow_btn.jpg) center center no-repeat; background-size:100% auto; overflow:hidden;}
+.layer_popup .layer_wrap .layer_cont {text-align:left;}
+.layer_popup .layer_wrap .btn_popup {text-align:center;}
